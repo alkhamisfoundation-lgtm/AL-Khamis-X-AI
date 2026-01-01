@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL KHAMIS FOUNDATION</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Animation -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Starter / Splash Screen -->
+    <div id="splash-screen">
+        <h1 class="splash-title">WELCOME TO<br><span>AL KHAMIS FOUNDATION</span></h1>
+        <p class="splash-subtitle">coming soon...</p>
+    </div>
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <nav class="sidebar">
+            <div class="nav-item active" id="nav-home" title="Home">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="nav-item" id="nav-book" title="Courses">
+                <i class="fas fa-book-open"></i>
+            </div>
+            <div class="nav-item" id="nav-teacher" title="Teachers">
+                <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <div class="nav-item" id="nav-setting" title="Settings">
+                <i class="fas fa-cog"></i>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- HOME VIEW -->
+            <div id="home-view">
+                <header>
+                    <h1>YOUR EDUCATION <span>SCHOOL</span></h1>
+                    <p class="subtitle">Expert-led education in technology and languages.</p>
+                </header>
+
+                <div class="home-section-title">
+                    <h2>SUBJECTS</h2>
+                    <p>Our Subjects</p>
+                </div>
+
+                <div class="subject-grid">
+                    <!-- Computer Science -->
+                    <div class="card">
+                        <span class="expert-badge">EXPERT</span>
+                        <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Computer Science</h3>
+                        <p>Master Web Development, algorithms, With AI creation, and system architecture with industry leaders.</p>
+                    </div>
+
+                    <!-- English -->
+                    <div class="card">
+                        <span class="expert-badge">HIGH</span>
+                        <div class="card-icon"><i class="fas fa-language"></i></div>
+                        <h3>English</h3>
+                        <p>Advanced literature and linguistics studies for global communication.</p>
+                    </div>
+
+                    <!-- Arabic -->
+                    <div class="card">
+                        <span class="expert-badge">أصلي</span>
+                        <div class="card-icon">
+                            <img src="ALLAH.png" class="custom-icon-img" alt="Allah Logo">
+                        </div>
+                        <h3>العربية</h3>
+                        <p>العربية الكلاسيكية والحديثة تُدرس على يد علماء معتمدين.</p>
+                    </div>
+
+                    <!-- Urdu -->
+                    <div class="card">
+                        <span class="expert-badge">اعلیٰ</span>
+                        <div class="card-icon">
+                            <img src="Allah-Urdu.png" class="custom-icon-img" alt="Urdu Logo">
+                        </div>
+                        <h3>اردو</h3>
+                        <p>ماہرانہ رہنمائی کے ساتھ اردو شاعری اور نثر کی گہرائیوں کو دریافت کریں۔</p>
+                    </div>
+
+                    <!-- Hindi -->
+                    <div class="card">
+                        <span class="expert-badge">मूल</span>
+                        <div class="card-icon">
+                            <img src="Allah-Hindi.png" class="custom-icon-img" alt="Hindi Logo">
+                        </div>
+                        <h3>हिंदी</h3>
+                        <p>मानक हिंदी व्याकरण और वार्तालाप कौशल में महारत हासिल करें।</p>
+                    </div>
+                </div>
+
+                <div class="home-section-title">
+                    <h2>NGO</h2>
+                    <p>heres are our Advocates Details</p>
+                </div>
+
+                <div class="subject-grid">
+                    <!-- NGO -->
+                    <div class="card">
+                        <span class="expert-badge">SOCIAL</span>
+                        <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <h3>NGO</h3>
+                        <p>Empowering communities through social welfare and humanitarian initiatives.</p>
+                    </div>
+
+                    <!-- Advocates -->
+                    <div class="card">
+                        <span class="expert-badge">LEGAL</span>
+                        <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
+                        <h3>Advocates</h3>
+                        <p>Expert legal consultancy and advocacy for justice and rights.</p>
+                    </div>
+
+                    <!-- Blood Donation -->
+                    <div class="card">
+                        <span class="expert-badge">FREE</span>
+                        <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Blood Donation</h3>
+                        <p>Free blood donation camps and emergency donor support.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOOK VIEW (Initially Hidden) -->
+            <div id="book-view" class="hidden">
+                <header>
+                    <h1>DETAILED <span>CURRICULUM</span></h1>
+                    <p class="subtitle">In-depth breakdown of our expert courses.</p>
+                </header>
+                <div id="book-content-area" class="detailed-grid">
+                    <!-- Content injected by book.js -->
+                </div>
+            </div>
+
+            <!-- TEACHERS VIEW (Initially Hidden) -->
+            <div id="teacher-view" class="hidden">
+                <header>
+                    <h1>OUR <span>MENTORS</span></h1>
+                    <p class="subtitle">Meet the experts behind your success.</p>
+                </header>
+                <div id="teachers-content-area" class="teacher-grid">
+                    <!-- Content injected by teachers.js -->
+                </div>
+            </div>
+
+            <!-- SETTINGS VIEW (Initially Hidden) -->
+            <div id="setting-view" class="hidden">
+                <header>
+                    <h1>SYSTEM <span>SETTINGS</span></h1>
+                    <p class="subtitle">Configure your preferences and application options.</p>
+                </header>
+                <div id="settings-content-area" class="detailed-grid">
+                    <!-- Content injected by setting.js -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="home.js"></script>
+    <script src="book.js"></script>
+    <script src="setting.js"></script>
+    <script src="teachers.js"></script>
+    <script src="AI.js"></script>
+</body>
+</html>
